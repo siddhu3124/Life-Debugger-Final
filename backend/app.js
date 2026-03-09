@@ -13,6 +13,12 @@ const devOrigins = [
   "http://localhost:5175"
 ];
 
+// Vercel proxy domains - allow all Vercel deployments
+const vercelOrigins = [
+  /\.vercel\.app$/,
+  /\.vercel\.app$/i
+];
+
 const allowedOrigins = [
   process.env.CLIENT_ORIGIN,
   ...devOrigins
@@ -21,12 +27,21 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or server-to-server)
       if (!origin) {
         return callback(null, true);
       }
 
+      // Check if origin is in allowed list
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);
+      }
+
+      // Check if it's a Vercel domain
+      for (const pattern of vercelOrigins) {
+        if (pattern.test(origin)) {
+          return callback(null, true);
+        }
       }
 
       return callback(null, false);

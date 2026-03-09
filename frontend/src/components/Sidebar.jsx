@@ -39,8 +39,8 @@ const Sidebar = ({ history, activeChatId, onSelectChat, onNewChat, onDeleteChat 
           </button>
           <div className="flex-1">
             <div className="flex items-center gap-2">
-              <img 
-                src="https://static.vecteezy.com/system/resources/previews/027/247/135/non_2x/green-june-beetle-bug-isolated-on-transparent-background-ai-generated-png.png"
+              <img
+                src="https://res.cloudinary.com/dnrc6z4gs/image/upload/v1773032247/LD-bug-removebg-preview_-_Edited_r6jgsz.png"
                 alt="Life Debugger Logo"
                 className="w-6 h-6 object-contain"
               />
@@ -111,11 +111,10 @@ const Sidebar = ({ history, activeChatId, onSelectChat, onNewChat, onDeleteChat 
             {filteredHistory.map((item) => (
               <li key={item.id}>
                 <div
-                  className={`w-full px-4 py-2.5 flex flex-col gap-1 transition-colors group ${
-                    activeChatId === item.id
-                      ? "bg-slate-900/80"
-                      : "hover:bg-slate-900/60"
-                  }`}
+                  className={`w-full px-4 py-2.5 flex flex-col gap-1 transition-colors group ${activeChatId === item.id
+                    ? "bg-slate-900/80"
+                    : "hover:bg-slate-900/60"
+                    }`}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <button

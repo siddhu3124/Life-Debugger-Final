@@ -33,10 +33,10 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4">
       <div className="w-full max-w-md bg-slate-900/60 border border-slate-800 rounded-2xl shadow-xl p-8">
-      
+
         <h1 className="text-2xl font-semibold text-center mb-2 flex items-center justify-center gap-3">
-          <img 
-            src="https://static.vecteezy.com/system/resources/previews/027/247/135/non_2x/green-june-beetle-bug-isolated-on-transparent-background-ai-generated-png.png"
+          <img
+            src="https://res.cloudinary.com/dnrc6z4gs/image/upload/v1773032247/LD-bug-removebg-preview_-_Edited_r6jgsz.png"
             alt="Life Debugger Logo"
             className="w-12 h-12 object-contain"
           />
@@ -132,7 +132,7 @@ const Login = () => {
               <span>+91 6300500266</span>
             </div> */}
             {/* Email Icon */}
-              {/* <div className="flex items-center justify-center gap-1">
+            {/* <div className="flex items-center justify-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3 h-3">
                   <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                   <path d="M22 5.842V20.25a2.25 2.25 0 01-2.248 2.25H4.248a2.25 2.25 0 01-2.248-2.25V5.842l9.478 5.869a.75.75 0 01.544.284V5.13a.75.75 0 01.344-.54l9.6-5.87z" />

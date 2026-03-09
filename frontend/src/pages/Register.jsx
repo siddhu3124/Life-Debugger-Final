@@ -41,12 +41,12 @@ const Register = () => {
     <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4">
       <div className="w-full max-w-md bg-slate-900/60 border border-slate-800 rounded-2xl shadow-xl p-8">
         <h1 className="text-2xl font-semibold text-center mb-2 flex items-center justify-center gap-3">
-          <img 
-            src="https://static.vecteezy.com/system/resources/previews/027/247/135/non_2x/green-june-beetle-bug-isolated-on-transparent-background-ai-generated-png.png"
+          <img
+            src="https://res.cloudinary.com/dnrc6z4gs/image/upload/v1773032247/LD-bug-removebg-preview_-_Edited_r6jgsz.png"
             alt="Life Debugger Logo"
             className="w-12 h-12 object-contain"
           />
-          <span className="text-emerald-400">Life Debugger 2.0</span>
+          <span className="text-emerald-400">Life Debugger</span>
         </h1>
         <p className="text-sm text-slate-400 text-center mb-8">
           Register to start debugging your life problems with AI.
@@ -176,7 +176,7 @@ const Register = () => {
               Life Debugger
             </div>
             {/* Phone Icon */}
-           
+
             {/* <div className="flex items-center justify-center gap-1">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3 h-3">
                 <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.905 1.376l2.808 1.26a2.25 2.25 0 001.808 1.258h2.38a2.25 2.25 0 001.805-1.555l2.81-1.26A2.25 2.25 0 0020.18 5H21a3 3 0 013 3v10.5a3 3 0 01-3 3h-1.372a3 3 0 01-1.905-1.376l-2.808-1.26a2.25 2.25 0 00-1.808-1.258H8.632a2.25 2.25 0 00-1.805 1.555l-2.81 1.26A2.25 2.25 0 003 19.5V4.5z" clipRule="evenodd" />
@@ -198,7 +198,7 @@ const Register = () => {
               </svg>
               <span>Nanakramguda, Hyderabad</span>
             </div>  */}
-            
+
             <div className="pt-2 mt-2 text-center">
               © 2026 Life Debugger. All rights reserved.
             </div>
