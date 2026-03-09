@@ -65,6 +65,15 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+app.get("/api/debug-key", (req, res) => {
+  const key = process.env.GEMINI_API_KEY || "";
+  res.json({
+    length: key.length,
+    start: key.substring(0, 5),
+    end: key.substring(key.length - 3)
+  });
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/problems", problemRoutes);
 
