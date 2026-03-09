@@ -57,15 +57,11 @@ app.get("/api/health", (req, res) => {
     status: "ok",
     service: "life-debugger-backend",
     company: "Life Debugger",
-    hasGeminiKey: !!process.env.GEMINI_API_KEY,
-    nodeEnv: process.env.NODE_ENV,
-    nodejsVersion: process.version,
     contact: {
       phone: "+91 6300500266",
       email: "siddhupappuu@gmail.com",
       address: "Nanakramguda, Hyderabad"
-    },
-    license: "© 2026 Life Debugger. All rights reserved."
+    }
   });
 });
 
