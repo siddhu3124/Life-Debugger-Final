@@ -36,7 +36,7 @@ router.post("/add", authMiddleware, async (req, res) => {
     });
   } catch (error) {
     console.error("Problem add error:", error);
-    return res.status(500).json({ message: "Failed to analyze problem" });
+    return res.status(500).json({ message: error.message || "Failed to analyze problem" });
   }
 });
 

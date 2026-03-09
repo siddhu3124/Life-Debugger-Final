@@ -207,20 +207,20 @@ If you have any other problem, feel free to ask anytime 👍`;
 
   // ✅ LIFE DEBUGGER INFO RESPONSE
   if (
-   lowerText.includes("life debugger") ||           	
-   lowerText.includes("who created life debugger") ||
-   lowerText.includes("about life debugger") ||
-   lowerText.includes("life debugger details") ||
-   lowerText.includes("life debugger information") ||
-   lowerText.includes("life debugger info") ||
-   lowerText.includes("life debugger background") ||
-   lowerText.includes("life debugger story") ||
-   lowerText.includes("about you") ||
-   lowerText.includes("who are you") ||
-   lowerText.includes("what is life debugger") ||
-   lowerText.includes("life debugger creator") ||
-   lowerText.includes("life debugger founder")
- 
+    lowerText.includes("life debugger") ||
+    lowerText.includes("who created life debugger") ||
+    lowerText.includes("about life debugger") ||
+    lowerText.includes("life debugger details") ||
+    lowerText.includes("life debugger information") ||
+    lowerText.includes("life debugger info") ||
+    lowerText.includes("life debugger background") ||
+    lowerText.includes("life debugger story") ||
+    lowerText.includes("about you") ||
+    lowerText.includes("who are you") ||
+    lowerText.includes("what is life debugger") ||
+    lowerText.includes("life debugger creator") ||
+    lowerText.includes("life debugger founder")
+
   ) {
 
     return `
@@ -311,10 +311,7 @@ ${problemText.trim()}
     return output.trim();
 
   } catch (error) {
-
     console.error("🔥 Gemini AI Error:", error);
-
-    throw new Error("AI response failed");
-
+    throw new Error("AI response failed: " + (error.message || error));
   }
 };
