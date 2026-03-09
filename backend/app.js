@@ -53,10 +53,13 @@ app.use(
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/api/health", (req, res) => {
-  res.json({ 
-    status: "ok", 
+  res.json({
+    status: "ok",
     service: "life-debugger-backend",
     company: "Life Debugger",
+    hasGeminiKey: !!process.env.GEMINI_API_KEY,
+    nodeEnv: process.env.NODE_ENV,
+    nodejsVersion: process.version,
     contact: {
       phone: "+91 6300500266",
       email: "siddhupappuu@gmail.com",
