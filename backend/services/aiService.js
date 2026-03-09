@@ -311,10 +311,7 @@ ${problemText.trim()}
     return output.trim();
 
   } catch (error) {
-
     console.error("🔥 Gemini AI Error:", error);
-
-    throw new Error("AI response failed");
-
+    throw new Error("AI response failed: " + (error?.message || error));
   }
 };
